@@ -1,0 +1,92 @@
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.boxcontent {
+	border: black;
+	color: white;
+	margin-left: 500px;
+	display: inline-block;
+	align-content: center;
+	background-color: black;
+	text-align: center;
+}
+.blogcontent {
+	display: block;
+	background-color: black;
+	color: white;
+}
+body {
+	background:#FEFEFE;
+	background-image: url(Imagenes/fondoVisitante.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #FFFFFF;
+}
+/*Slider de publicaciones*/
+.slider-wrapper{
+	position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.slider{
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: hidden;
+	scroll-snap-type: x  mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 .25rem .5rem #21212126;
+	border-radius: .5rem;
+}
+.slider img{
+	flex: 1 0 100%;
+	width: 50%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+.slider-nav{
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+.slider-nav a{
+	width: .5rem;
+	height: .5rem;
+	border-radius: 50%;
+	background-color: white;
+	opacity: .75;
+	transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+	opacity: 100%;
+}
+/*Menu Principal*/
+.menu
+{
+    background: grey;
+}
+
+.btn-menu
+{
+    color: #FFF;
+    font-size: 25px;
+}
+
+.nav-link
+{
+    color: #FFF;
+}
+
+.logo
+{
+    width: 50px;
+    height: 50px;
+}
