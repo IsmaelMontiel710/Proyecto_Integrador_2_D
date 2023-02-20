@@ -1,0 +1,60 @@
+body
+{
+ background-image:url(../imagen/fondo-lo.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ /* AQUI SE ESTA PONIENDO EL FONDO DEL LOGIN*/
+}
+.formulario{
+    
+    background: hwb(0 22% 75% / 0.5);
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 45px (0, 0 , 0 , 0.568);
+    color: rgb(0, 0, 0);
+ /*Aqui se pone el diseño de lo sombreado en el formulario*/
+
+}
+.form-control{
+    background: rgb(80, 80, 80);
+    border-style: none;
+    outline: none;
+    box-shadow: white;
+    transition: 0.5s ease-in;
+    color: white;
+    
+/*Aqui se pone el diseño de las etiquetas*/
+}
+.form-control:focus{
+    background: white;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+    outline: blue;
+    color: rgb(0, 0, 0);
+   /* Aqui se pone el diseño de cuando la etiqueta esta en transision*/
+}
+.form-control::placeholder{
+    color: rgb(255, 255, 255); 
+    /* Aqui esta ek color de la letra de las etiquetas*/
+}
+
+.ingresar{
+    background: #006cd1;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700!important;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+    transition: 0.5s ease-in;
+    /*Aqui esta el diseño de la etiqueta ingresar*/
+}
+
+.ingresar:hover{
+    color: black;
+    /*Aqui esta el color de la letra de transision dentro de ingresar*/
+}
+.espacio{
+    position: relative;
+    left: 200px;
+    top: -5px;
+}
